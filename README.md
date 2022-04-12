@@ -20,6 +20,7 @@ This module helps you to replace your system fonts though Magisk.
 ## Features
 
 - Works on any device running Android 9.0+ and Magisk 20.4+
+- Support latest Noto Emoji version (Unicode 14.0)
 - Fully replaces the system font:
 
 | State  | Original Font                | Custom Font                 | Source                                                    |
