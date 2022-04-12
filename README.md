@@ -23,13 +23,15 @@ This module helps you to replace your system fonts though Magisk.
 - Support latest Noto Emoji version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
 - Fully replaces the system font:
 
-| State  | Original Font                | Custom Font                 | Source                                                    |
-| ------ | ---------------------------- | --------------------------- | --------------------------------------------------------- |
+| State  | Original Font                | Custom Font                 | Source                                                   |
+| ------ | ---------------------------- | --------------------------- | -------------------------------------------------------- |
 | change | AndroidCLock Regular         | OpenSans-Regular (modified) | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | CarroisGothicSC-Regular      | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | ComingSoon                   | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| change | CutiveMono                   | FiraCode-Light              | [Fira Code](https://github.com/tonsky/FiraCode) |
 | change | DancingScript-Bold           | OpenSans-Bold               | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | DancingScript-Regular        | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| change | DroidSansMono                | FiraCode-Regular            | [Fira Code](https://github.com/tonsky/FiraCode) |
 | change | Lato-Bold                    | OpenSans-Bold               | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | Lato-BoldItalic              | OpenSans-BoldItalic         | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | Lato-Italic                  | OpenSans-Italic             | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
