@@ -50,3 +50,9 @@ This module helps you to replace your system fonts though Magisk.
 | Roboto-Regular               | OpenSans-Regular         | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | Roboto-Thin                  | OpenSans-Light           | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | Roboto-ThinItalic            | OpenSans-LightItalic     | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| SourceSansPro-Bold           | OpenSans-Bold            | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| SourceSansPro-BoldItalic     | OpenSans-BoldItalic      | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| SourceSansPro-Italic         | OpenSans-Italic          | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| SourceSansPro-Regular        | OpenSans-Regular         | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| SourceSansPro-SemiBold       | OpenSans-SemiBold        | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| SourceSansPro-SemiBoldItalic | OpenSans-SemiBoldItalic  | ![Open Sans](https://fonts.google.com/specimen/Open+Sans) |
