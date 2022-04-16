@@ -25,7 +25,7 @@ This module helps you to replace your system fonts though Magisk.
 
 | State  | Original Font                | Custom Font                 | Source                                                   |
 | ------ | ---------------------------- | --------------------------- | -------------------------------------------------------- |
-| change | AndroidCLock Regular         | OpenSans-Regular (modified) | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| change | AndroidCLock                 | OpenSans-Regular (modified) | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | CarroisGothicSC-Regular      | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | ComingSoon                   | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | CutiveMono                   | FiraCode-Light              | [Fira Code](https://github.com/tonsky/FiraCode) |
