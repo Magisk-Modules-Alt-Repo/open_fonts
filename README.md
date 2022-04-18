@@ -31,6 +31,8 @@ This module helps you to replace your system fonts though Magisk.
 | change | CutiveMono                   | FiraCode-Light              | [Fira Code](https://github.com/tonsky/FiraCode) |
 | change | DancingScript-Bold           | OpenSans-Bold               | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | DancingScript-Regular        | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| change | DroidSans                    | OpenSans-Regular            | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
+| change | DroidSans-Bold               | OpenSans-Bold               | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | DroidSansMono                | FiraCode-Regular            | [Fira Code](https://github.com/tonsky/FiraCode) |
 | change | Lato-Bold                    | OpenSans-Bold               | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
 | change | Lato-BoldItalic              | OpenSans-BoldItalic         | [Open Sans](https://fonts.google.com/specimen/Open+Sans) |
