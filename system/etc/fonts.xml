@@ -45,22 +45,22 @@
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="500" />
         </font>
-        <font weight="600" style="normal">Roboto-Regular.ttf
+        <font weight="600" style="normal">Roboto-Bold.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="600" />
         </font>
-        <font weight="700" style="normal">Roboto-Regular.ttf
+        <font weight="700" style="normal">Roboto-Bold.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="700" />
         </font>
-        <font weight="800" style="normal">Roboto-Regular.ttf
+        <font weight="800" style="normal">Roboto-Bold.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="800" />
         </font>
-        <font weight="900" style="normal">Roboto-Regular.ttf
+        <font weight="900" style="normal">Roboto-Bold.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="900" />
@@ -149,22 +149,22 @@
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="500" />
       </font>
-      <font weight="600" style="normal">Roboto-Regular.ttf
+      <font weight="600" style="normal">Roboto-Bold.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="600" />
       </font>
-      <font weight="700" style="normal">Roboto-Regular.ttf
+      <font weight="700" style="normal">Roboto-Bold.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="700" />
       </font>
-      <font weight="800" style="normal">Roboto-Regular.ttf
+      <font weight="800" style="normal">Roboto-Bold.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="800" />
       </font>
-      <font weight="900" style="normal">Roboto-Regular.ttf
+      <font weight="900" style="normal">Roboto-Bold.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="900" />
