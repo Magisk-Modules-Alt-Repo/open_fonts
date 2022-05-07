@@ -23,7 +23,7 @@ This module helps you to replace your system fonts though Magisk.
 
 - Works on any device running AOSP rom with Android 9.0+ and Magisk 20.4+
 - Support latest Noto Emoji version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
-- All fonts already present have been updated
+- Replaced Samsung, LG and HTC custom emoji with Noto Emoji
 - Fully replaces the system fonts with:
     1. [Noto Sans](https://fonts.google.com/specimen/Open+Sans)
     2. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
