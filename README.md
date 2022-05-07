@@ -25,5 +25,5 @@ This module helps you to replace your system fonts though Magisk.
 - Support latest Noto Emoji version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
 - Replaced Samsung, LG and HTC custom emoji with Noto Emoji
 - Fully replaces the system fonts with:
-    1. [Noto Sans](https://fonts.google.com/specimen/Open+Sans)
+    1. [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
     2. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
