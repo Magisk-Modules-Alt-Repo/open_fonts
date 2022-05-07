@@ -25,6 +25,5 @@ This module helps you to replace your system fonts though Magisk.
 - Support latest Noto Emoji version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
 - All fonts already present have been updated
 - Fully replaces the system fonts with:
-    1. [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-    2. [Cousine](https://fonts.google.com/specimen/Cousine)
-    3. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
+    1. [Noto Sans](https://fonts.google.com/specimen/Open+Sans)
+    2. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
