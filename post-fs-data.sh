@@ -1,5 +1,7 @@
 MODDIR=${0%/*}
 
+ln -s $MODDIR/system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/AndroidClock.ttf
+
 if getprop ro.product.manufacturer | grep -qE -e "^samsung";
 then
 	cp $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/SamsungColorEmoji.ttf
