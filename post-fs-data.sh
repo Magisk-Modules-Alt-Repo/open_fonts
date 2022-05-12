@@ -1,14 +1,14 @@
 MODDIR=${0%/*}
 
-ln -s $MODDIR/system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/AndroidClock.ttf
+MANUFACTER=$(getprop ro.product.manufacturer)
 
-if getprop ro.product.manufacturer | grep -qE -e "^samsung";
-then
-	cp $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/SamsungColorEmoji.ttf
-elif getprop ro.product.manufacturer | grep -qE -e "^LGE";
-then
-    cp $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/LGNotoColorEmoji.ttf
-elif getprop ro.product.manufacturer | grep -qE -e "^HTC";
-then
-	cp $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/HTC_ColorEmoji.ttf
+ln -s $MODDIR/system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/AndroidClock.ttf
+ln -s $MODDIR/system/fonts/NotoSansMono.ttf $MODDIR/system/fonts/DroidSansMono.ttf
+
+if [ $MANUFACTER = "Samsung" ]; then
+	ln -s $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/SamsungColorEmoji.ttf
+elif [ $MANUFACTER = "LGE" ]; then
+    ln -s $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/LGNotoColorEmoji.ttf
+elif [ $MANUFACTER = "HTC" ]; then
+	ln -s $MODDIR/system/fonts/NotoColorEmoji.ttf $MODDIR/system/fonts/HTC_ColorEmoji.ttf
 fi
