@@ -24,92 +24,92 @@
 <familyset version="23">
     <!-- first font is default -->
     <family name="sans-serif">
-        <font weight="100" style="normal">Roboto-Thin.ttf
+        <font weight="100" style="normal">NotoSans-Thin.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="100" />
         </font>
-        <font weight="200" style="normal">Roboto-Thin.ttf
+        <font weight="200" style="normal">NotoSans-Thin.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="200" />
         </font>
-        <font weight="300" style="normal">Roboto-Light.ttf
+        <font weight="300" style="normal">NotoSans-Light.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="300" />
         </font>
-        <font weight="400" style="normal">Roboto-Regular.ttf
+        <font weight="400" style="normal">NotoSans-Regular.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="400" />
         </font>
-        <font weight="500" style="normal">Roboto-Regular.ttf
+        <font weight="500" style="normal">NotoSans-Regular.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="500" />
         </font>
-        <font weight="600" style="normal">Roboto-Medium.ttf
+        <font weight="600" style="normal">NotoSans-Medium.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="600" />
         </font>
-        <font weight="700" style="normal">Roboto-Bold.ttf
+        <font weight="700" style="normal">NotoSans-Bold.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="700" />
         </font>
-        <font weight="800" style="normal">Roboto-Bold.ttf
+        <font weight="800" style="normal">NotoSans-Bold.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="800" />
         </font>
-        <font weight="900" style="normal">Roboto-Black.ttf
+        <font weight="900" style="normal">NotoSans-Black.ttf
           <axis tag="ital" stylevalue="0" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="900" />
         </font>
-        <font weight="100" style="italic">Roboto-ThinItalic.ttf
+        <font weight="100" style="italic">NotoSans-ThinItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="100" />
         </font>
-        <font weight="200" style="italic">Roboto-ThinItalic.ttf
+        <font weight="200" style="italic">NotoSans-ThinItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="200" />
         </font>
-        <font weight="300" style="italic">Roboto-LightItalic.ttf
+        <font weight="300" style="italic">NotoSans-LightItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="300" />
         </font>
-        <font weight="400" style="italic">Roboto-Italic.ttf
+        <font weight="400" style="italic">NotoSans-Italic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="400" />
         </font>
-        <font weight="500" style="italic">Roboto-Italic.ttf
+        <font weight="500" style="italic">NotoSans-Italic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="500" />
         </font>
-        <font weight="600" style="italic">Roboto-MediumItalic.ttf
+        <font weight="600" style="italic">NotoSans-MediumItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="600" />
         </font>
-        <font weight="700" style="italic">Roboto-BoldItalic.ttf
+        <font weight="700" style="italic">NotoSans-BoldItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="700" />
         </font>
-        <font weight="800" style="italic">Roboto-BoldItalic.ttf
+        <font weight="800" style="italic">NotoSans-BoldItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="800" />
         </font>
-        <font weight="900" style="italic">Roboto-BlackItalic.ttf
+        <font weight="900" style="italic">NotoSans-BlackItalic.ttf
           <axis tag="ital" stylevalue="1" />
           <axis tag="wdth" stylevalue="100" />
           <axis tag="wght" stylevalue="900" />
@@ -128,92 +128,92 @@
     <alias name="verdana" to="sans-serif" />
 
     <family name="sans-serif-condensed">
-      <font weight="100" style="normal">RobotoCondensed-Thin.ttf
+      <font weight="100" style="normal">NotoSansCondensed-Thin.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="100" />
       </font>
-      <font weight="200" style="normal">RobotoCondensed-Thin.ttf
+      <font weight="200" style="normal">NotoSansCondensed-Thin.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="200" />
       </font>
-      <font weight="300" style="normal">RobotoCondensed-Light.ttf
+      <font weight="300" style="normal">NotoSansCondensed-Light.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="300" />
       </font>
-      <font weight="400" style="normal">RobotoCondensed-Regular.ttf
+      <font weight="400" style="normal">NotoSansCondensed-Regular.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="400" />
       </font>
-      <font weight="500" style="normal">RobotoCondensed-Regular.ttf
+      <font weight="500" style="normal">NotoSansCondensed-Regular.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="500" />
       </font>
-      <font weight="600" style="normal">RobotoCondensed-Medium.ttf
+      <font weight="600" style="normal">NotoSansCondensed-Medium.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="600" />
       </font>
-      <font weight="700" style="normal">RobotoCondensed-Bold.ttf
+      <font weight="700" style="normal">NotoSansCondensed-Bold.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="700" />
       </font>
-      <font weight="800" style="normal">RobotoCondensed-Bold.ttf
+      <font weight="800" style="normal">NotoSansCondensed-Bold.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="800" />
       </font>
-      <font weight="900" style="normal">RobotoCondensed-Black.ttf
+      <font weight="900" style="normal">NotoSansCondensed-Black.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="900" />
       </font>
-      <font weight="100" style="italic">RobotoCondensed-ThinItalic.ttf
+      <font weight="100" style="italic">NotoSansCondensed-ThinItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="100" />
       </font>
-      <font weight="200" style="italic">RobotoCondensed-ThinItalic.ttf
+      <font weight="200" style="italic">NotoSansCondensed-ThinItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="200" />
       </font>
-      <font weight="300" style="italic">RobotoCondensed-LightItalic.ttf
+      <font weight="300" style="italic">NotoSansCondensed-LightItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="300" />
       </font>
-      <font weight="400" style="italic">RobotoCondensed-Italic.ttf
+      <font weight="400" style="italic">NotoSansCondensed-Italic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="400" />
       </font>
-      <font weight="500" style="italic">RobotoCondensed-Italic.ttf
+      <font weight="500" style="italic">NotoSansCondensed-Italic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="500" />
       </font>
-      <font weight="600" style="italic">RobotoCondensed-MediumItalic.ttf
+      <font weight="600" style="italic">NotoSansCondensed-MediumItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="600" />
       </font>
-      <font weight="700" style="italic">RobotoCondensed-BoldItalic.ttf
+      <font weight="700" style="italic">NotoSansCondensed-BoldItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="700" />
       </font>
-      <font weight="800" style="italic">RobotoCondensed-BoldItalic.ttf
+      <font weight="800" style="italic">NotoSansCondensed-BoldItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="800" />
       </font>
-      <font weight="900" style="italic">RobotoCondensed-BlackItalic.ttf
+      <font weight="900" style="italic">NotoSansCondensed-BlackItalic.ttf
         <axis tag="ital" stylevalue="1" />
         <axis tag="wdth" stylevalue="75" />
         <axis tag="wght" stylevalue="900" />
