@@ -1,7 +1,10 @@
 ##########################################################################################
-# Configs
+# Config Flags
 ##########################################################################################
 
+# Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maximum android version for your mod
+# Uncomment DYNLIB if you want libs installed to vendor for oreo+ and system for anything older
+# Uncomment DEBUG if you want full debug logs (saved to /sdcard)
 MINAPI=29
 #MAXAPI=25
 #DYNLIB=true
@@ -48,7 +51,6 @@ set_permissions() {
   
   # set_perm $MODPATH/system/lib/libart.so 0 0 0644
   # set_perm /data/local/tmp/file.txt 0 0 644
-  # set_perm_recursive  $MODPATH/system/fonts  0  0  0755  0644
 }
 
 SKIPUNZIP=1
