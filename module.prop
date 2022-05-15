@@ -1,7 +1,7 @@
 id=open_fonts
 name=Open Fonts
-version=1.0.9
-versionCode=109
+version=1.1.0
+versionCode=110
 author=F3FFO
 description=Open Fonts change your system fonts
 minMagisk=20400
