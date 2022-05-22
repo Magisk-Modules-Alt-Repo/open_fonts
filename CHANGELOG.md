@@ -1,5 +1,10 @@
 **If you found this helpful, please consider supporting development with a [coffe](https://www.paypal.me/f3ff0). Alternatively, you can contribute to the project by reporting bugs and doing PR. All support is appreciated!**
 
+# v1.1.2
+
+- Decreased module size
+- Bug fix
+
 # v1.1.1
 
 - Added ability to choose whether to change the emoji font
@@ -25,7 +30,7 @@
 # v1.0.7
 
 - Decrease module size
-- Replaced OpenSans font with a more complete one: NotoSans 
+- Replaced OpenSans font with a more complete one: NotoSans
 - Add support for Thin font
 - Add support for Medium font
 - Add support for Black font
@@ -48,7 +53,7 @@
 
 - Update to last version some Noto fonts
 - Changed Rubik font
-- Changed Lato font 
+- Changed Lato font
 
 # v1.0.2
 
@@ -58,7 +63,7 @@
 
 - Change secondary system fonts
 - Create AndroidClock font from Open Sans
-- Add NotoColorEmoji (unicode 14) 
+- Add NotoColorEmoji (unicode 14)
 
 # v1.0.0
 
