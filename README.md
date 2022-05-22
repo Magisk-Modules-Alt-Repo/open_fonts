@@ -42,6 +42,11 @@ If you found this helpful, please consider supporting development with a [coffe]
 
 ## Change logs
 
+# v1.1.3
+
+- Optimizated installation script
+- Bug fix
+
 # v1.1.2
 
 - Decreased module size
