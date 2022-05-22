@@ -1,4 +1,4 @@
-# Open Fonts
+# Open Fonts - [XDA Thread](https://forum.xda-developers.com/t/magisk-module-font-open-fonts.4446663/)
 
 ![Open Font](https://raw.githubusercontent.com/F3FFO/Open-Fonts/master/img/logo.png)
 
