@@ -28,3 +28,10 @@ This module helps you to replace your system fonts though Magisk.
 - Fully replaces the system fonts with:
     1. [Noto Sans](https://github.com/googlefonts/noto-fonts)
     2. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
+
+## Credits
+
+- [MMT-Extended](https://github.com/Zackptg5/MMT-Extended) by [Zackptg5](https://github.com/Zackptg5)
+- [Keycheck](https://github.com/Zackptg5/Keycheck) by [Zackptg5](https://github.com/Zackptg5)
+- [Noto Sans](https://github.com/googlefonts/noto-fonts)
+- [Noto Emoji](https://github.com/googlefonts/noto-emoji)
