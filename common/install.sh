@@ -4,20 +4,20 @@ MANUFACTER=$(getprop ro.product.manufacturer)
 EMOJI=false
 
 # replace
-ln -s $MODPATH/system/fonts/NotoSans-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
-ln -s $MODPATH/system/fonts/NotoSans-Regular.ttf $MODPATH/system/fonts/DroidSans.ttf
-ln -s $MODPATH/system/fonts/NotoSans-Bold.ttf $MODPATH/system/fonts/DroidSans-Bold.ttf
+ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/AndroidClock.ttf
+ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/DroidSans.ttf
+ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/DroidSans-Bold.ttf
 
-if [ $SDK -ge 32 ]; then
-	ui_print ''
+if [ $SDK -ge 31 ]; then
+	ui_print '  !!!'
 	ui_print '- Your system already supports the latest version of emoji'
-	ui_print ''
+	ui_print '  !!!'
 fi
 
 # user input
 ui_print '- Do you want to replace system emoji with Noto Emoji?'
 
-if [ $SDK -ge 32 ]; then
+if [ $SDK -ge 31 ]; then
 	ui_print '  Vol+ = yes, Vol- = no[recommended]'
 else
 	ui_print '  Vol+ = yes, Vol- = no'
