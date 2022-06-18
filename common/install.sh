@@ -5,6 +5,11 @@ EMOJI=false
 
 # replace
 ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/AndroidClock.ttf
+if [ $MANUFACTER = "Samsung" ]; then
+	ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
+	ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/Clock2021.ttf
+	ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
+fi
 ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/DroidSans.ttf
 ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/DroidSans-Bold.ttf
 
