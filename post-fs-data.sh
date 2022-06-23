@@ -1,7 +1,6 @@
-SDK=$(getprop ro.system.build.version.sdk)
+SDK=$(getprop ro.build.version.sdk)
 MANUFACTER=$(getprop ro.product.manufacturer)
 
-mkdir $MODPATH/system/etc
 cp -a /system/etc/fonts.xml $MODPATH/system/etc
 
 # function to replace Roboto font
