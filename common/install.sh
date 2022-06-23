@@ -29,7 +29,7 @@ else
 	ui_print '  Vol+ = yes, Vol- = no'
 fi
 
-if chooseport 5; then
+if chooseport; then
 	EMOJI=true
 fi
 
