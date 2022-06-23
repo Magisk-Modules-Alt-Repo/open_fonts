@@ -1,5 +1,6 @@
+#!/system/bin/sh
 # environment
-SDK=$(getprop ro.system.build.version.sdk)
+SDK=$(getprop ro.build.version.sdk)
 MANUFACTER=$(getprop ro.product.manufacturer)
 EMOJI=false
 

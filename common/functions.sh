@@ -1,3 +1,4 @@
+#!/system/bin/sh
 cleanup() {
   rm -rf $MODPATH/common 2>/dev/null
 }
