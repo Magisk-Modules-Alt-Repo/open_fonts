@@ -1,21 +1,18 @@
+#!/system/bin/sh
+# environment
 SDK=$(getprop ro.build.version.sdk)
 MANUFACTER=$(getprop ro.product.manufacturer)
 
-cp -a /system/etc/fonts.xml $MODPATH/system/etc
-
-# function to replace Roboto font
+# function
 replace_roboto() {
-    # normal
-    sed -i 's@style="normal">Roboto-Regular.ttf@style="normal">NotoSans.ttf@g' $1
-    # italic
-    sed -i 's@style="italic">Roboto-Regular.ttf@style="italic">NotoSans-Italic.ttf@g' $1
+    sed -i 's@Roboto-.*.ttf@Roboto-Regular.ttf@g' $1
+    sed -i 's@RobotoCondensed-.*.ttf@Roboto-Regular.ttf@g' $1
 }
 
-# goodbye Roboto
-if [ $SDK -lt 31 ] ; then
-    sed -i 's@Roboto-.*@NotoSans@g' $MODPATH/system/etc/fonts.xml
-    sed -i 's@RobotoCondensed-.*@NotoSans@g' $MODPATH/system/etc/fonts.xml
-else
+mkdir $MODPATH/system/etc
+cp -a /system/etc/fonts.xml $MODPATH/system/etc
+
+if [ $SDK -lt 31 ]; then
     replace_roboto $MODPATH/system/etc/fonts.xml
 fi
 

@@ -2,22 +2,24 @@
 # environment
 SDK=$(getprop ro.build.version.sdk)
 MANUFACTER=$(getprop ro.product.manufacturer)
-EMOJI=false
 
 # replace
-ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/AndroidClock.ttf
-if [ $MANUFACTER = "Samsung" ]; then
-	ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
-	ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/Clock2021.ttf
-	ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
+ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
+if [ $SDK -ge 31 ]; then
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoStatic-Regular.ttf
 fi
-ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/DroidSans.ttf
-ln -s $MODPATH/system/fonts/NotoSans.ttf $MODPATH/system/fonts/DroidSans-Bold.ttf
+
+if [ $MANUFACTER = "Samsung" ]; then
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
+fi
 
 if [ $SDK -ge 31 ]; then
-	ui_print '  !!!'
-	ui_print '- Your system already supports the latest version of emoji'
-	ui_print '  !!!'
+	ui_print ''
+	ui_print '  !!! ATTENTION !!!'
+	ui_print '  Your system already supports the latest emojis'
+	ui_print ''
 fi
 
 # user input
@@ -29,12 +31,8 @@ else
 	ui_print '  Vol+ = yes, Vol- = no'
 fi
 
-if chooseport; then
-	EMOJI=true
-fi
-
 # replace emoji
-if $EMOJI; then
+if chooseport; then
 	ui_print '  Downloading NotoColorEmoji...'
 	curl -OLs --output-dir "$MODPATH/system/fonts" https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf
 	ui_print '  NotoColorEmoji downloaded!'
