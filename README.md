@@ -42,6 +42,10 @@ If you found this helpful, please consider supporting development with a [coffe]
 
 ## Change logs
 
+# v2.0.1
+
+- Bug fix
+
 # v2.0.0
 
 - Increased boot speed
