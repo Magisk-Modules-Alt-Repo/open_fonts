@@ -2,34 +2,72 @@
 # environment
 SDK=$(getprop ro.build.version.sdk)
 MANUFACTER=$(getprop ro.product.manufacturer)
-EMOJI=false
 
 # replace
-ln -s $MODPATH/system/fonts/NotoSans-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
-ln -s $MODPATH/system/fonts/NotoSans-Regular.ttf $MODPATH/system/fonts/DroidSans.ttf
-ln -s $MODPATH/system/fonts/NotoSans-Bold.ttf $MODPATH/system/fonts/DroidSans-Bold.ttf
+ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
+if [ $SDK -ge 31 ]; then
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoStatic-Regular.ttf
+else
+	# regular
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Thin.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Light.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Medium.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Bold.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Black.ttf
+	# italic
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-ThinItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-LightItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-MediumItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BoldItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BlackItalic.ttf
+	# condensed regular
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Thin.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Light.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Medium.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Bold.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Black.ttf
+	# condensed italic
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-ThinItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-LightItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-MediumItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BoldItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BlackItalic.ttf
+fi
 
-if [ $SDK -ge 32 ]; then
+if [ $MANUFACTER = "Samsung" ]; then
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3L.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3R.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
+	if [ $SDK -lt 31 ]; then
+	    ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2016.ttf
+    	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017L.ttf
+    	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017R.ttf
+		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L.ttf
+		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3L.ttf
+		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3R.ttf
+	fi
+fi
+
+if [ $SDK -ge 31 ]; then
 	ui_print ''
-	ui_print '- Your system already supports the latest version of emoji'
+	ui_print '  !!! ATTENTION !!!'
+	ui_print '  Your system already supports the latest emojis'
 	ui_print ''
 fi
 
 # user input
 ui_print '- Do you want to replace system emoji with Noto Emoji?'
 
-if [ $SDK -ge 32 ]; then
+if [ $SDK -ge 31 ]; then
 	ui_print '  Vol+ = yes, Vol- = no[recommended]'
 else
 	ui_print '  Vol+ = yes, Vol- = no'
 fi
 
-if chooseport 5; then
-	EMOJI=true
-fi
-
 # replace emoji
-if $EMOJI; then
+if chooseport; then
 	ui_print '  Downloading NotoColorEmoji...'
 	curl -OLs --output-dir "$MODPATH/system/fonts" https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf
 	ui_print '  NotoColorEmoji downloaded!'
