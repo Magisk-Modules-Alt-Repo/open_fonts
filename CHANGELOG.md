@@ -1,5 +1,13 @@
 **If you found this helpful, please consider supporting development with a [coffe](https://www.paypal.me/f3ff0). Alternatively, you can contribute to the project by reporting bugs and doing PR. All support is appreciated!**
 
+# v2.0.0
+
+- Increased boot speed
+- Update compatibility with Samsung devices
+- Fully compatible with Safety Net Fix
+- Update addon
+- Bug fix
+
 # v1.1.3
 
 - Optimizated installation script
