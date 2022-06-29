@@ -7,12 +7,47 @@ MANUFACTER=$(getprop ro.product.manufacturer)
 ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
 if [ $SDK -ge 31 ]; then
 	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoStatic-Regular.ttf
+else
+	# regular
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Thin.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Light.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Medium.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Bold.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Black.ttf
+	# italic
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-ThinItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-LightItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-MediumItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BoldItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BlackItalic.ttf
+	# condensed regular
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Thin.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Light.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Medium.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Bold.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Black.ttf
+	# condensed italic
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-ThinItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-LightItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-MediumItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BoldItalic.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BlackItalic.ttf
 fi
 
 if [ $MANUFACTER = "Samsung" ]; then
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3L.ttf
+	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3R.ttf
 	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
 	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021.ttf
 	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
+	if [ $SDK -lt 31 ]; then
+	    ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2016.ttf
+    	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017L.ttf
+    	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017R.ttf
+		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L.ttf
+		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3L.ttf
+		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3R.ttf
+	fi
 fi
 
 if [ $SDK -ge 31 ]; then
