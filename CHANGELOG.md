@@ -1,5 +1,13 @@
 **If you found this helpful, please consider supporting development with a [coffe](https://www.paypal.me/f3ff0). Alternatively, you can contribute to the project by reporting bugs and doing PR. All support is appreciated!**
 
+# v3.0.0
+
+- Added two new system fonts: OpenSans and Roboto-Flex
+- Added two new monospaced system fonts: NotoSans Mono and JetBrains Mono
+- Added a new emoji font: Twemoji
+- Decreased module size
+- Bug fix
+
 # v2.0.1
 
 - Bug fix
@@ -7,7 +15,7 @@
 # v2.0.0
 
 - Increased boot speed
-- Update compatibility with Samsung devices
+- Updated compatibility with Samsung devices
 - Fully compatible with Safety Net Fix
 - Update addon
 - Bug fix
