@@ -31,7 +31,7 @@ If you found this helpful, please consider supporting development with a [coffe]
 ## Features
 
 - Works on any device running Android 10.0+ and Magisk 20.4+
-- Support latest Noto Emoji version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
+- Support latest unicode version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
 - Replaced Samsung, LG and HTC custom emoji with Noto Emoji
 - You can choose to replace system fonts with:
   1. [Noto Sans](https://github.com/googlefonts/noto-fonts)
