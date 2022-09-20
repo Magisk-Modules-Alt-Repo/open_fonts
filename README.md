@@ -42,6 +42,18 @@ If you found this helpful, please consider supporting development with a [coffe]
 
 ## Change logs
 
+# v2.0.1
+
+- Bug fix
+
+# v2.0.0
+
+- Increased boot speed
+- Update compatibility with Samsung devices
+- Fully compatible with Safety Net Fix
+- Update addon
+- Bug fix
+
 # v1.1.3
 
 - Optimizated installation script

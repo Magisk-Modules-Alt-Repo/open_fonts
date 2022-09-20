@@ -4,49 +4,49 @@ SDK=$(getprop ro.build.version.sdk)
 MANUFACTER=$(getprop ro.product.manufacturer)
 
 # replace
-ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
+ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/AndroidClock.ttf
 if [ $SDK -ge 31 ]; then
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoStatic-Regular.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoStatic-Regular.ttf
 else
 	# regular
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Thin.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Light.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Medium.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Bold.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Black.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Thin.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Light.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Medium.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Bold.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Roboto-Black.ttf
 	# italic
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-ThinItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-LightItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-MediumItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BoldItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BlackItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-ThinItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-LightItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-MediumItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BoldItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/Roboto-BlackItalic.ttf
 	# condensed regular
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Thin.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Light.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Medium.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Bold.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Black.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Thin.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Light.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Medium.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Bold.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoCondensed-Black.ttf
 	# condensed italic
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-ThinItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-LightItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-MediumItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BoldItalic.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BlackItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-ThinItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-LightItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-MediumItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BoldItalic.ttf
+	ln -s ./Roboto-Italic.ttf $MODPATH/system/fonts/RobotoCondensed-BlackItalic.ttf
 fi
 
 if [ $MANUFACTER = "Samsung" ]; then
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3L.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3R.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021.ttf
-	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3L.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/SECNum-3R.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L-RM.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021.ttf
+	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2021_Fixed.ttf
 	if [ $SDK -lt 31 ]; then
-	    ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2016.ttf
-    	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017L.ttf
-    	ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017R.ttf
-		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L.ttf
-		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3L.ttf
-		ln -s $MODPATH/system/fonts/Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3R.ttf
+	    ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2016.ttf
+    	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017L.ttf
+    	ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2017R.ttf
+		ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/Clock2019L.ttf
+		ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3L.ttf
+		ln -s ./Roboto-Regular.ttf $MODPATH/system/fonts/RobotoNum-3R.ttf
 	fi
 fi
 
@@ -73,14 +73,14 @@ if chooseport; then
 	ui_print '  NotoColorEmoji downloaded!'
 	ui_print ''
 	ui_print '  Replacing system emojis...'
-	ln -s $MODPATH/system/fonts/NotoColorEmoji.ttf $MODPATH/system/fonts/NotoColorEmoji.ttf
+	ln -s ./NotoColorEmoji.ttf $MODPATH/system/fonts/NotoColorEmoji.ttf
 	sed -i 's@NotoColorEmojiFlags@NotoColorEmoji@g' $MODPATH/system/etc/fonts.xml
 	if [ $MANUFACTER = "Samsung" ]; then
-		ln -s $MODPATH/system/fonts/NotoColorEmoji.ttf $MODPATH/system/fonts/SamsungColorEmoji.ttf
+		ln -s ./NotoColorEmoji.ttf $MODPATH/system/fonts/SamsungColorEmoji.ttf
 	elif [ $MANUFACTER = "LGE" ]; then
-		ln -s $MODPATH/system/fonts/NotoColorEmoji.ttf $MODPATH/system/fonts/LGNotoColorEmoji.ttf
+		ln -s ./NotoColorEmoji.ttf $MODPATH/system/fonts/LGNotoColorEmoji.ttf
 	elif [ $MANUFACTER = "HTC" ]; then
-		ln -s $MODPATH/system/fonts/NotoColorEmoji.ttf $MODPATH/system/fonts/HTC_ColorEmoji.ttf
+		ln -s ./NotoColorEmoji.ttf $MODPATH/system/fonts/HTC_ColorEmoji.ttf
 	fi
 	ui_print '  System emojis replaced!'
 else
