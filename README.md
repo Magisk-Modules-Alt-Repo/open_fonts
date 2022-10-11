@@ -46,6 +46,8 @@ If you found this helpful, please consider supporting development with a [coffe]
 
 - [MMT-Extended](https://github.com/Zackptg5/MMT-Extended) by [Zackptg5](https://github.com/Zackptg5)
 - [Keycheck](https://github.com/Zackptg5/Keycheck) by [Zackptg5](https://github.com/Zackptg5)
+- [cUrl](https://github.com/curl/curl)
+- [cUrl binary](https://github.com/F3FFO/compile_zlib_openssl_curl_android)
 - [Noto Sans/NotoSans Mono](https://github.com/googlefonts/noto-fonts)
 - [OpenSans](https://github.com/googlefonts/opensans)
 - [Roboto-Flex](https://github.com/googlefonts/roboto-flex)
@@ -66,6 +68,11 @@ Noto Emoji is available under the [SIL Open Font License v1.1](https://github.co
 Twemoji is available under the [CC-BY 4.0](https://github.com/twitter/twemoji/blob/master/LICENSE-GRAPHICS)
 
 ## Change logs
+
+# v3.0.1
+
+- Add curl binary
+- Bug fix
 
 # v3.0.0
 
