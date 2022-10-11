@@ -1,7 +1,12 @@
 #!/system/bin/sh
+# environment
 MANUFACTER=$(getprop ro.product.manufacturer)
+# utility
+STATUS=0
+# fonta data
 STANDARD_FONT_NAME_REGULAR="Roboto-Regular.ttf"
 STANDARD_FONT_NAME_ITALIC="Roboto-Italic.ttf"
+
 ui_print "- Choose a font between:"
 ui_print "  -) NotoSans"
 ui_print "  -) OpenSans"
@@ -33,30 +38,28 @@ else
 	fi
 fi
 
-IS_ERROR=true
 ui_print "  Downloading ${SYSTEM_FONT}..."
-for i in 1 2 3
-do
-	if [[ "$IS_ERROR" = true ]]; then
+for i in 1 2 3; do
+	if [ $STATUS -eq 0 ]; then
 		if [[ ! -f "${SYSTEM_FONT}.ttf" ]]; then
-			curl -Lso "${SYSTEM_FONT}.ttf" "${FONT_URL_REGULAR}"
+			curl -kLo "${SYSTEM_FONT}.ttf" "${FONT_URL_REGULAR}"
 		fi
 
 		if [[ $FONT_URL_ITALIC != "none" && ! -f "${SYSTEM_FONT}-Italic.ttf" ]]; then
-			curl -Lso "${SYSTEM_FONT}-Italic.ttf" "${FONT_URL_ITALIC}"
+			curl -kLo "${SYSTEM_FONT}-Italic.ttf" "${FONT_URL_ITALIC}"
 		fi
 
 		if [[ ! -f "${SYSTEM_FONT}.ttf" ]]; then
-			IS_ERROR=true
+			STATUS=0
 		elif [[ $FONT_URL_ITALIC != "none" && ! -f "${SYSTEM_FONT}-Italic.ttf" ]]; then
-			IS_ERROR=true
+			STATUS=0
 		else
-			IS_ERROR=false
+			STATUS=1
 		fi
 	fi
 done
 
-if [[ "$IS_ERROR" = true ]]; then
+if [ $STATUS -eq 0 ]; then
 	ui_print ""
 	ui_print "  !!! Dowload failed !!!"
 	ui_print "  Check your connection and try again."
@@ -107,9 +110,9 @@ if [ $MANUFACTER = "Samsung" ]; then
 	ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2021.ttf
 	ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2021_Fixed.ttf
 	if [ $API -lt 31 ]; then
-	    ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2016.ttf
-    	ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2017L.ttf
-    	ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2017R.ttf
+		ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2016.ttf
+		ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2017L.ttf
+		ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2017R.ttf
 		ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/Clock2019L.ttf
 		ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/RobotoNum-3L.ttf
 		ln -s ./$STANDARD_FONT_NAME_REGULAR "$MODPATH"/system/fonts/RobotoNum-3R.ttf
@@ -141,22 +144,20 @@ if chooseport; then
 		fi
 	fi
 
-	IS_ERROR=true
 	ui_print "  Downloading ${SYSTEM_FONT}..."
-	for i in 1 2 3
-	do
-		if [[ "$IS_ERROR" = true ]]; then
-			curl -Lso "${SYSTEM_FONT}.ttf" "${FONT_URL_REGULAR}"
+	for i in 1 2 3; do
+		if [ $STATUS -eq 0 ]; then
+			curl -kLo "${SYSTEM_FONT}.ttf" "${FONT_URL_REGULAR}"
 
 			if [[ ! -f "${SYSTEM_FONT}.ttf" ]]; then
-				IS_ERROR=true
+				STATUS=0
 			else
-				IS_ERROR=false
+				STATUS=1
 			fi
 		fi
 	done
 
-	if [[ "$IS_ERROR" = true ]]; then
+	if [ $STATUS -eq 0 ]; then
 		ui_print ""
 		ui_print "  !!! Dowload failed !!!"
 		ui_print "  Check your connection and try again."
@@ -203,11 +204,11 @@ if chooseport; then
 	fi
 
 	ui_print "  Downloading ${EMOJI_FONT}..."
-	curl -Lso "${EMOJI_FONT}.ttf" "${EMOJI_URL}"
+	curl -kLo "${EMOJI_FONT}.ttf" "${EMOJI_URL}"
 	if [ -f "${EMOJI_FONT}.ttf" ]; then
 		ui_print "  ${EMOJI_FONT} downloaded!"
 	else
-		curl -Lso "${EMOJI_FONT}.ttf" "${EMOJI_URL}"
+		curl -kLo "${EMOJI_FONT}.ttf" "${EMOJI_URL}"
 		if [ -f "${EMOJI_FONT}.ttf" ]; then
 			ui_print "  ${EMOJI_FONT} downloaded!"
 		fi
