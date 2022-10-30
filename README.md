@@ -8,7 +8,7 @@ This module helps you to replace your system fonts though Magisk.
 
 ### About Twemoji
 
-I extracted the font from the arch linux user repository because it is already in the [CBDT](https://learn.microsoft.com/en-us/typography/opentype/spec/cbdt)/[CBLC](https://learn.microsoft.com/en-us/typography/opentype/spec/cblc) standard
+I extracted the font from the arch linux user repository because it is already in the [CBDT](https://learn.microsoft.com/en-us/typography/opentype/spec/cbdt)/[CBLC](https://learn.microsoft.com/en-us/typography/opentype/spec/cblc) standard.
 
 ## Compatibility
 
@@ -32,7 +32,7 @@ If you found this helpful, please consider supporting development with a [coffe]
 
 - Works on any device running Android 10.0+ and Magisk 20.4+
 - Support latest unicode version ([Unicode 14.0](https://emojipedia.org/unicode-14.0/))
-- Replaced Samsung, LG and HTC custom emoji with Noto Emoji
+- Replace Samsung, LG and HTC custom emoji
 - You can choose to replace system fonts with:
   1. [Noto Sans](https://github.com/googlefonts/noto-fonts)
   2. [OpenSans](https://github.com/googlefonts/opensans)
@@ -61,13 +61,18 @@ Copyright 2022 F3FFO
 
 The source code is available under [GPL-3.0](https://github.com/Magisk-Modules-Alt-Repo/open_fonts/blob/master/LICENSE)
 
-Noto Sans/NotoSans Mono are available under the [SIL Open Font License v1.1](https://github.com/notofonts/noto-fonts/blob/main/LICENSE)
-Roboto-Flex is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/roboto-flex/blob/main/OFL.txt)
-JetBrainsMono is available under the [SIL Open Font License v1.1](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt)
-Noto Emoji is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE)
-Twemoji is available under the [CC-BY 4.0](https://github.com/twitter/twemoji/blob/master/LICENSE-GRAPHICS)
+- Noto Sans/NotoSans Mono are available under the [SIL Open Font License v1.1](https://github.com/notofonts/noto-fonts/blob/main/LICENSE)
+- Roboto-Flex is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/roboto-flex/blob/main/OFL.txt)
+- JetBrainsMono is available under the [SIL Open Font License v1.1](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt)
+- Noto Emoji is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE)
+- Twemoji is available under the [CC-BY 4.0](https://github.com/twitter/twemoji/blob/master/LICENSE-GRAPHICS)
 
 ## Change logs
+
+# v3.1.0
+
+- Rewrite installation script
+- Bug fix
 
 # v3.0.1
 
