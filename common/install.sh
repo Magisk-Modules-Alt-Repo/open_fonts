@@ -190,7 +190,9 @@ if chooseport 30; then
 		ui_print "    [Vol+ = yes, Vol- = no]"
 		if chooseport 3; then
 			install_clock_font
-		fi
+		else
+    		ui_print "  Android clock font not replaced."
+  		fi
 		ui_print "  Fonts replaced!"
 	else
 		ui_print "  Fonts will not be replaced!"
