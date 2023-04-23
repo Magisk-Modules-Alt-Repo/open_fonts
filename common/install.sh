@@ -28,7 +28,7 @@ noto_sans_mono() {
 }
 jetbrains_mono() {
 	FONT_NAME="JetBrainsMono"
-	FONT_URL=https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf
+	FONT_URL=ogni/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf
 }
 noto_color_emoji() {
 	FONT_NAME="NotoColorEmoji"
