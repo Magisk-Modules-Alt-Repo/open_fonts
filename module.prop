@@ -1,10 +1,10 @@
 id=open_fonts
 name=Open Fonts
-version=3.1.0
-versionCode=118
+version=3.1.1
+versionCode=119
 author=F3FFO
 description=Open Fonts change your system fonts
 minMagisk=20400
 updateJson=https://raw.githubusercontent.com/Magisk-Modules-Alt-Repo/open_fonts/master/update.json
-support=https://forum.xda-developers.com/t/magisk-module-font-open-fonts.4446663/
+support=https://forum.xda-developers.com/t/magisk-module-font-open-fonts-3-1-1.4446663/
 donate=https://www.paypal.me/f3ff0
