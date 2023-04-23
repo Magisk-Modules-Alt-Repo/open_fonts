@@ -17,7 +17,7 @@ I extracted the font from the arch linux user repository because it is already i
 
 ## Tested Device
 
-- Many devices with [LOS 18.1 and 19](https://lineageos.org/)
+- Many devices with [LOS 18.1, 19 and 20](https://lineageos.org/)
 - Some devices with OneUI 3.0, 3.1, 4.0 and 4.1
 
 ## DISCLAIMER
