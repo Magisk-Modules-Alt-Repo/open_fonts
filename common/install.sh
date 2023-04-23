@@ -7,9 +7,9 @@ NEXT_SELECTION=1
 
 noto_sans() {
 	FONT_NAME="NotoSans"
-	FONT_URL=https://github.com/notofonts/noto-fonts/raw/main/unhinted/variable-ttf/NotoSans-VF.ttf
+	FONT_URL=https://github.com/notofonts/notofonts.github.io/blob/main/fonts/NotoSans/unhinted/variable-ttf/NotoSans%5Bwdth%2Cwght%5D.ttf
 	FONT_NAME_ITALIC="NotoSans-Italic"
-	FONT_URL_ITALIC=https://github.com/notofonts/noto-fonts/raw/main/unhinted/variable-ttf/NotoSans-Italic-VF.ttf
+	FONT_URL_ITALIC=https://github.com/notofonts/notofonts.github.io/blob/main/fonts/NotoSans/unhinted/variable-ttf/NotoSans-Italic%5Bwdth%2Cwght%5D.ttf
 }
 open_sans() {
 	FONT_NAME="OpenSans"
@@ -24,7 +24,7 @@ robot_flex() {
 }
 noto_sans_mono() {
 	FONT_NAME="NotoSansMono"
-	FONT_URL=https://github.com/notofonts/noto-fonts/raw/main/unhinted/variable-ttf/NotoSansMono-VF.ttf
+	FONT_URL=https://github.com/notofonts/notofonts.github.io/blob/main/fonts/NotoSansMono/unhinted/variable-ttf/NotoSansMono%5Bwdth%2Cwght%5D.ttf
 }
 jetbrains_mono() {
 	FONT_NAME="JetBrainsMono"
