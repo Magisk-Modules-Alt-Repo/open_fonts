@@ -69,6 +69,10 @@ The source code is available under [GPL-3.0](https://github.com/Magisk-Modules-A
 
 ## Change logs
 
+# v3.1.1
+
+- Update link for noto sans fonts
+
 # v3.1.0
 
 - Rewrite installation script
